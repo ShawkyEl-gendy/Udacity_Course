@@ -1,0 +1,35 @@
+/* Query 1 */
+SELECT  name AS "Artist_Name", count(AlbumId) AS "Num_Album" 
+FROM Album b 
+JOIN Artist t 
+ON b.ArtistId=t.ArtistId
+GROUP BY 1
+ORDER BY 2 DESC
+LIMIT 10;
+
+/* Query 2 */
+SELECT g.Name AS "music_name" , count(distinct(ArtistId)) AS "num_artists" 
+FROM track t 
+JOIN Genre g 
+ON t.GenreId = g.GenreId 
+JOIN Album a 
+ON a.AlbumId = t.AlbumId 
+GROUP BY 1
+ORDER BY 2 desc
+LIMIT 10 ;
+
+/* Query 3 */
+SELECT c.FirstName||' '|| c.LastName AS "customer" , sum(i.total) AS "total"
+FROM Invoice i
+JOIN customer c
+ON c.customerid = i.customerid
+GROUP  BY 1
+ORDER BY 2 desc
+LIMIT 10;
+
+/* Query 4 */
+SELECT e.FirstName||' '|| e.LastName AS "Employee" , count(*) AS "num_customer"
+FROM Employee e
+JOIN Customer c 
+ON e.EmployeeId=c.SupportRepId
+GROUP  BY 1 ;
