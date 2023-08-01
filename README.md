@@ -4,9 +4,10 @@ In the Data Analysis track at Udacity, you will learn a variety of skills and te
 Throughout the program, you will learn how to use popular data analysis tools such as Python and SQL. You will also gain a solid understanding of statistical concepts and techniques, enabling you to analyze data and make informed decisions based on your findings.
 
 The skills I earned :
--Doing Data Analysis using Excel, Python, SQL, and Tableau.
--Using different packages in Python ( Numpy, Pandas, Matplotlib, Seaborn, and others).
+
+- Doing Data Analysis using Excel, Python, SQL, and Tableau.
+- Using different packages in Python ( Numpy, Pandas, Matplotlib, Seaborn, and others).
 - Gathering the data from different sources.
 - Cleaning the Data.
 - Visualization of the Data by Tableau.
--Writing a summary report.
+- Writing a summary report.
